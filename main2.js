@@ -10,11 +10,11 @@ function send() {
     getword = document.getElementById("word").value;
     word = getword.toLowerCase();
 
-    l1 = word.charAT(1);
+    l1 = word.charAt(1);
     dividt = Math.floor(word.length / 2);
-    l2 = word.charAT(dividt);
+    l2 = word.charAt(dividt);
     u = word.length - 1;
-    l3 = word.charAT(u);
+    l3 = word.charAt(u);
     remove1 = word.replace(l1, "_");
     remove2 = remove1.replace(l2, "_");
     remove3 = remove2.replace(l3, "_");
